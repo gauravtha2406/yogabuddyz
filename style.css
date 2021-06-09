@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 :root {
-  --primary-color: #e8505b;
+  
   --white-color: #ffffff;
   --dark-color: #171819;
   --about-bg-color: #f9f9f9;
@@ -49,9 +49,9 @@ a {
 a:hover,
 a:active,
 a:focus {
-  color: var(--primary-color);
-  outline: none;
-  text-decoration: none;
+  
+  outline: none !important;
+  
 }
 
 ul,
@@ -94,6 +94,10 @@ body {
     margin-top: 15px;
     border-radius: 50px;
     
+}
+.carousel-inner a:hover{
+  text-decoration: underline !important;
+  color: white !important;
 }
 .carousel-item p{
   color: #fff;
@@ -145,6 +149,27 @@ body {
     position: relative;
     width: 100%;
     padding: 45px 0 15px 0;
+}
+.section-header p {
+  display: inline-block;
+  margin: 0 30px;
+  margin-bottom: 5px;
+  padding: 0 10px;
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  background: #ffffff;
+}
+
+.section-header p::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  top: 11px;
+  right: -30px;
+  left: -30px;
+  background :#0399f0;
+  z-index: -1;
 }
 
 .service .service-item {
@@ -422,9 +447,9 @@ strong {
 
 .custom-btn.bg-color:hover,
 .custom-btn.bg-color:focus {
-  background: var(--white-color);
-  border-color: transparent;
-  color: var(--primary-color);
+ 
+  text-decoration: underline !important;
+  color: white !important;
 }
 
 .bg-color {
@@ -436,10 +461,7 @@ strong {
   padding-bottom: 0;
 }
 
-.spad {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
+
 
 .home_about_pic {
   margin-right: -20px;
@@ -484,8 +506,8 @@ strong {
 
 .section-title h2 {
   font-weight: 400;
-  font-size: 40px;
-  font-family: "Playfair Display", serif;
+  font-size: 40px !important;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -520,9 +542,15 @@ strong {
   display: block;
   margin-bottom: 5px;
   text-transform: uppercase;
-  color: #f65d5d;
+  color: #0874bd;
   font-weight: 700;
   letter-spacing: 2px;
+}
+.section-header h2{
+  margin-bottom: 2.5rem;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 42px !important; 
 }
 .heading-section h2 {
   font-size: 60px;
@@ -560,7 +588,7 @@ strong {
   right: 0;
   bottom: 0;
   content: "";
-  background: #f65d5d;
+  background: #0399f0;
   opacity: 0;
   z-index: 1;
   transition: all 0.3s ease;
@@ -858,6 +886,7 @@ strong {
   padding-top: 80px;
   padding-bottom: 50px;
 }
+
 .team-content-area {
   position: relative;
   z-index: 1;
@@ -892,7 +921,9 @@ strong {
 
 .team-content-area:hover,
 .team-content-area:focus {
-  background-color: #fc6060;
+ 
+    background-color: lightblue;
+
 }
 
 .team-content-area:hover .member-thumb img,
@@ -932,6 +963,8 @@ strong {
   position: relative;
   margin-right: 8px;
 }
+
+ 
 
 .event-video img {
   width: 100%;
@@ -978,7 +1011,7 @@ strong {
 
 .event-item .ei-text h4 {
   font-weight: 400;
-  font-family: "Playfair Display", serif;
+  
   margin-bottom: 15px;
 }
 
@@ -987,8 +1020,15 @@ strong {
   transition: all 0.3s;
 }
 
+.col-xl-6 {
+    -ms-flex: 0 0 50% !important;
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+}
+
+
 .event-item .ei-text h4 a:hover {
-  color: #f65d5d;
+  color: #0399f0;
 }
 
 .event-item .ei-text ul {
@@ -1001,7 +1041,7 @@ strong {
 }
 
 .event-item .ei-text ul li i {
-  color: #f65d5d;
+  color:#0399f0;
   font-size: 16px;
   position: relative;
   top: 3px;
@@ -1074,7 +1114,7 @@ button#submit-button {
 }
 
 button#submit-button {
-  background: var(--dark-color);
+  background: #0399f0 !important;
   border-color: transparent;
   color: var(--white-color);
   cursor: pointer;
@@ -1098,9 +1138,100 @@ button#submit-button:hover {
 .google-map iframe {
   width: 100%;
 }
+/* faq section */
+/*===Faq Section===*/
+.faq section .section-title {
+	text-align: center;
+	
+    margin-top: 0;
+    margin-bottom: 1rem;
+
+}
+.faq .faq-list {
+	padding: 1px 100px;
+  }
+
+  
+  .faq .faq-list ul {
+	padding: 0;
+	list-style: none;
+  }
+  
+  .faq .faq-list li + li {
+	margin-top: 15px;
+  }
+  
+  .faq .faq-list li {
+	padding: 20px;
+	background: #fff;
+	border-radius: 4px;
+	position: relative;
+  }
+  
+  .faq .faq-list a {
+	display: block;
+	position: relative;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 500;
+	padding: 0 30px;
+	outline: none;
+  }
+  
+  .faq .faq-list .icon-help {
+	font-size: 24px;
+	position: absolute;
+	right: 0;
+	left: 20px;
+	color: #021235;
+  }
+  
+  .faq .faq-list .icon-show, .faq .faq-list .icon-close {
+	font-size: 24px;
+	position: absolute;
+	right: 0;
+	top: 0;
+  }
+  
+  .faq .faq-list p {
+	margin-bottom: 0;
+	padding: 10px 0 0 0;
+  }
+  
+  .faq .faq-list .icon-show {
+	display: none;
+  }
+  
+  .faq .faq-list a.collapsed {
+	color: #00162c;
+  }
+  
+  .faq .faq-list a.collapsed:hover {
+	color: #0874bd;
+  }
+  
+  .faq .faq-list a.collapsed .icon-show {
+	display: inline-block;
+  }
+  
+  .faq .faq-list a.collapsed .icon-close {
+	display: none;
+  }
+  
+  @media (max-width: 1200px) {
+	.faq .faq-list {
+	  padding: 1px;
+    padding-bottom: 23px;
+	}
+  }
+  .section-bg{
+    background: #abd2f736;
+}
+/* end of faq section */
+
 
 .footer {
-  background: #8a242bd0;
+  background: #0874bd;;
   padding-top: 70px;
 }
 
@@ -1114,7 +1245,7 @@ button#submit-button:hover {
 }
 
 .footer_about ul li {
-  color: #000;
+  color: white;
   line-height: 37px;
   font-size: 16px;
   list-style: none;
@@ -1122,7 +1253,7 @@ button#submit-button:hover {
 
 .footer_about ul li i {
   font-size: 16px;
-  color: #e8505b;
+  color:#0874bd;;
   margin-right: 5px;
 }
 
@@ -1139,7 +1270,7 @@ button#submit-button:hover {
   height: 50px;
   font-size: 14px;
   color: rgb(255, 255, 255);
-  background: rgba(0, 0, 0, 0.7);
+  background: white;
   border: none;
   border-radius: 2px;
   padding-left: 22px;
@@ -1149,7 +1280,7 @@ button#submit-button:hover {
   font-size: 20px;
   color: #ffffff;
   display: inline-block;
-  background: #e8505b;
+  background: black;
   padding: 0 15px;
   border: none;
   position: absolute;
@@ -1174,14 +1305,14 @@ button#submit-button:hover {
 
 .footer_widget ul li a {
   font-size: 16px;
-  color: #000;
+  color:white;
   line-height: 37px;
 }
 
 .footer_widget .footer-address li {
   list-style: none;
   font-size: 16px;
-  color: #000;
+  color: white;
   line-height: 37px;
 }
 
@@ -1198,16 +1329,16 @@ button#submit-button:hover {
 
 .footer_copyright_text p {
   font-size: 14px;
-  color: #000;
+  color: white;
   margin-bottom: 0;
 }
 
 .footer_copyright_text i {
-  color: #a11f1f;
+  color: white;
 }
 
 .footer_copyright_text a {
-  color: #e8505b;
+  color: white;
 }
 
 .footer_copyright_social {
@@ -1303,9 +1434,10 @@ button#submit-button:hover {
     margin:45px auto;
 }
 .card-button a{
-    border:1px solid #50d1c0;
+    
     border-radius: 100px;
-    color: #50d1c0;
+    background-color: #0399f0 !important;
+    color: white;
     margin:0px 5px;
     padding: 12px 35px;
     outline:none;
@@ -1313,10 +1445,9 @@ button#submit-button:hover {
     text-align: center;
 }
 .card-button a:hover{
-    color: black;
-    text-decoration: none;
-    background: #50d1c0;
-    box-shadow:0 0 20px 0 rgba(0,0,0,0.3);
+    color: white;
+    text-decoration: underline;
+  
 
 }
 .card{
