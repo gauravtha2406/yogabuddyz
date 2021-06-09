@@ -1530,7 +1530,8 @@ position:relative;
         margin:17px;
     }
     .event-item .ei-text h4 a {
-	    font-size:20px;
+	       font-size: 15px;
+    font-weight: 700;
 	}
     
     
