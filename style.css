@@ -487,6 +487,12 @@ strong {
 .home_about_text h2 {
   letter-spacing: 3px;
 }
+@media (max-width: 576px) {
+.home_about_pic_item {
+  height: 620px;
+  width: 100%;
+}
+}
 
 .home_about_text .section-title {
   text-align: left;
