@@ -11,7 +11,7 @@ display: flex;
     place-items: center;
 }
 .signup .container {
-    width: 1000px;
+  
     background: #fff;
     margin: 30px auto;
     box-shadow: 0 15px 16.83px 0.17px rgb(0 0 0 / 5%);
@@ -118,7 +118,7 @@ figure {
   font-size: 1rem;
   cursor: pointer;
   transition: all 0.3s linear;
-  width: auto;
+  
 }
 .signup img ,.signin img {
     width: 350px; 
@@ -127,4 +127,70 @@ figure {
     -webkit-filter: drop-shadow(5px 0 3px rgba(0,0,0,.05));
     filter: drop-shadow(5px 0 3px rgba(0,0,0,.05));
 }
+@media screen and (max-width:768px)
 
+ {
+
+              
+signin-form, .signin-image, .signup-form, .signup-image {
+    width: auto;
+} 
+.signin-content, .signup-content {
+    flex-direction: column;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -o-flex-direction: column;
+    justify-content: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -o-justify-content: center;
+    -ms-justify-content: center;
+}
+.signin-image, .signup-form {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.signin-image {
+    margin-top: 50px;
+    order: 2;
+    -moz-order: 2;
+    -webkit-order: 2;
+    
+}
+.signin-form {
+    order: 1;
+    -moz-order: 1;
+    -webkit-order: 1;
+    -o-order: 1;
+    -ms-order: 1;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0 30px;
+}
+.form-title {
+    text-align: center;
+}
+label {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    color: #222;
+}
+.form-button {
+    text-align: center;
+}
+    
+}
+
+@media screen and (max-width: 1200px){
+.container {
+    width: calc(100% - 30px);
+    max-width: 100%;
+}
+}
